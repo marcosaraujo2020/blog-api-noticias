@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // API de Notícias da NyTimes
     document.getElementById('obter-noticia-nytimes').addEventListener('click', function() {
 
-        const key = API_KEY_NYTIMES
+        const key = 'API_KEY_NYTIMES'
         const url = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${key}`;
         
         fetch(url)
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
    // API de Notícias da The Guardian
    document.getElementById('obter-noticia-guardian').addEventListener('click', function() {
 
-        const key = API_KEY_GUARDIAN
+        const key = 'API_KEY_GUARDIAN'
         const url = `https://content.guardianapis.com/search?api-key=${key}`;
         
         fetch(url)
